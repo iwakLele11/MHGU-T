@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MHGU Web Companion &amp; Set Builder</title>
+
+  <!-- Tailwind CSS via CDN (no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind runtime config: enable class-based dark mode (slate/zinc + amber/emerald accents).
+    tailwind.config = { darkMode: 'class' };
+  </script>
+
+  <!-- App logic (loaded before Alpine so x-data factories are registered) -->
+  <script defer src="js/calculator.js"></script>
+  <script defer src="js/app.js"></script>
+
+  <!-- Alpine.js v3 via CDN -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-200 antialiased">
+
+  <!--
+    STAGE 1 SKELETON ONLY.
+    This shell establishes the dark theme and the CDN wiring. No feature logic yet.
+
+    STAGE 2 (after approval): tab navigation (Weapons / Armor / Set Builder),
+    the JSON loader bootstrap, and the Weapon & Armor filter pages go here.
+    STAGE 3 (after approval): the Set Builder split-screen + sticky summary panel.
+
+    See docs/STAGE1-DESIGN.md for the full plan.
+  -->
+  <main class="mx-auto max-w-6xl px-4 py-10">
+    <h1 class="text-2xl font-bold text-amber-400">MHGU Web Companion &amp; Set Builder</h1>
+    <p class="mt-2 text-slate-400">
+      Stage 1 skeleton. Design: <code class="text-emerald-400">docs/STAGE1-DESIGN.md</code>.
+    </p>
+
+    <!-- STAGE 2 PLACEHOLDER: tab nav + filter pages -->
+    <!-- STAGE 3 PLACEHOLDER: set builder + summary panel -->
+  </main>
+
+</body>
+</html>
